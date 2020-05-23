@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 
 import { Portfolio } from './Portfolio/Portfolio';
 
+import { about } from './../constants/About';
+import { skills } from './../constants/Skills';
+import { projects } from './../constants/Projects';
 import './App.css';
 
 class App extends Component {
@@ -9,12 +12,32 @@ class App extends Component {
 		super();
 
 		this.state = {
-			selectedSection: "about"
+			selectedSection: "",
+			selectedHeading: "",
+			selectedQuote: "",
+			about: null,
+			skills: null,
+			projects: null,
 		};
 	}
 
+	componentWillMount () {
+		this.setState ({ 
+			about,
+			skills,
+			projects,
+			selectedHeading: about.heading,
+			selectedQuote: about.quote,
+			selectedSection: "about" 
+		});
+	}
+
 	handleSectionClick =  (section) => {
-		alert (section);
+		this.setState({
+			selectedSection: section,
+			selectedHeading: this.state[section].heading,
+			selectedQuote: this.state[section].quote
+		})
 	}
 
 	render () {
@@ -22,6 +45,12 @@ class App extends Component {
 			<div className="App">
 				<Portfolio
 					handleSectionClick={this.handleSectionClick}
+					selectedSection={this.state.selectedSection}
+					selectedHeading={this.state.selectedHeading}
+					selectedQuote={this.state.selectedQuote}
+					about={this.state.about}
+					skills={this.state.skills}
+					projects={this.state.projects}
 				/>
 			</div>
 		);

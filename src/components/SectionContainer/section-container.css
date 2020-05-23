@@ -13,6 +13,7 @@
     font-size: 18px;
     margin-top: 0;
     font-style: italic;
+    white-space: pre-wrap;
 }
 
 .section-heading-container::after {

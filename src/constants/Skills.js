@@ -23,19 +23,19 @@ export const skills = {
         "MongoDB",
     ],
     industryKnowledge: [
-        "Software Project Management",
+        "Software",
         "Marketing",
         "Publicity",
         "Blogging",
         "Content Writing",
         "Creative Writing",
-        "Web Content Writing",
-        "Frontend Development",
-        "Software Development",
-        "Backend Development",
+        "Web Content",
+        "Frontend",
+        "Software",
+        "Backend",
         "Design",
-        "Web Development",
-        "Android App Development"
+        "Web",
+        "Android"
     ],
     interpersonalSkills: [
         "Communication",

@@ -1,18 +1,32 @@
 import React from 'react';
 
-import { About } from './../About/About'
+import { About } from './../About/About';
+import { Skills } from './../Skills/Skills';
+import { Projects } from './../Projects/Projects';
 
 import './section-container.css';
 
-export const SectionContainer = (props) => {
+export const SectionContainer = ({ 
+    selectedHeading, 
+    selectedQuote,
+    selectedSection,
+    about,
+    skills,
+    projects }) => {
     return (
         <div className="section-container">
             <div className="section-heading-container">
-                <h1 className="main-heading">About Me</h1>
-                <p className="main-quote">"If you love life, don't waste time, <br />for time is what life is made up of"</p>
+                <h1 className="main-heading">{selectedHeading}</h1>
+                <p className="main-quote">{selectedQuote}</p>
             </div>
             <div className="section-component">
-                <About />
+                {
+                    {
+                        about: <About bio={about.bio} />,
+                        skills: <Skills skills={skills} />,
+                        projects: <Projects projects={projects} />
+                    }[selectedSection]
+                }
             </div>
         </div>
     )

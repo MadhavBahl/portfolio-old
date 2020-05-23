@@ -35,13 +35,13 @@
 }
 
 .section-list-element {
-    font-size: 20px;
-    margin: 4px;
+    font-size: 21px;
+    margin: 8px;
     /* padding: 12px; */
     font-weight: 600;
 }
 
 .section-list-element:hover {
     cursor: pointer;
-    font-size: 20.5px;
+    font-size: 21.5px;
 }
