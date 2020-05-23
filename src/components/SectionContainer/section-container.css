@@ -1,0 +1,27 @@
+.section-container {
+    text-align: left;
+    padding-right: 20px;
+    overflow-y: auto;
+}
+
+.main-heading {
+    font-size: 42px;
+    margin-bottom: 0;
+}
+
+.main-quote {
+    font-size: 18px;
+    margin-top: 0;
+    font-style: italic;
+}
+
+.section-heading-container::after {
+    display: inline-block;
+    content: "";
+    border-top: 1px solid black;
+    width: 4rem;
+    margin-top: 0;
+    margin-bottom: 5px;
+    transform: translateY(-1rem);
+}
+
