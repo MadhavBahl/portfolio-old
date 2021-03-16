@@ -1,47 +1,56 @@
 .avatar {
-    width: 140px;
-    padding: 4px;
-    border: 2px solid black;
-    border-radius: 100px;
-    /* margin-bottom: 15px; */
+  width: 140px;
+  padding: 4px;
+  border: 2px solid black;
+  border-radius: 100px;
+  /* margin-bottom: 15px; */
 }
 
 @media only screen and (max-width: 600px) {
-    .avatar {
-        margin-top: 40px;
-    }
+  .avatar {
+    margin-top: 40px;
+  }
 }
 
 .main-name {
-    margin: 0;
-    margin-top: 10px;
-    font-size: 28px;
+  margin: 0;
+  margin-top: 10px;
+  font-size: 28px;
 }
 
 .subtitle {
-    margin-top: 0;
-    font-style: italic;
+  margin-top: 0;
+  font-style: italic;
 }
 
 .sections-list::before,
 .sections-list::after {
-    display: inline-block;
-    content: "";
-    border-top: 1px solid black;
-    width: 4rem;
-    margin-top: 0;
-    margin-bottom: -10px;
-    transform: translateY(-1rem);
+  display: inline-block;
+  content: "";
+  border-top: 1px solid black;
+  width: 4rem;
+  margin-top: 0;
+  margin-bottom: -10px;
+  transform: translateY(-1rem);
 }
 
 .section-list-element {
-    font-size: 21px;
-    margin: 8px;
-    /* padding: 12px; */
-    font-weight: 600;
+  font-size: 21px;
+  margin: 8px;
+  /* padding: 12px; */
+  font-weight: 600;
 }
 
 .section-list-element:hover {
-    cursor: pointer;
-    font-size: 21.5px;
+  cursor: pointer;
+  font-size: 21.5px;
+}
+.logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+}
+.image {
+  margin-left: 6.8px;
 }
